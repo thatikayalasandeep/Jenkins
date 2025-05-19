@@ -50,6 +50,8 @@ pipeline {
                 submitter "alice,bob"
                 parameters {
                     string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+                }
+             }
             steps {
                 script{
                     sh """
