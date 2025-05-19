@@ -8,6 +8,7 @@ pipeline {
                 script{
                     sh """
                         echo "Hello, This is Build"
+                        sandeep
                     """
                 }
             }
