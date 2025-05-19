@@ -2,7 +2,7 @@ pipeline {
     agent { 
         label 'AGENT-1'
     }
-    evnironment{
+    environment{
         project="Expense"
         component="Backend"
         env="Dev"
