@@ -6,7 +6,7 @@ pipeline {
         project="Expense"
         component="Backend"
         env="Dev"
-        Deploy_To="production"
+        Deploy_To ="production"
     }
     options{ 
         disableConcurrentBuilds()
@@ -54,7 +54,7 @@ pipeline {
                 }
              } */
              when{
-                environment name:'Deploy_To', value: 'stage'
+                environment name:'Deploy_To', value: 'production'
              }
             steps {
                 script{
