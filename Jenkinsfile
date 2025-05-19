@@ -2,12 +2,18 @@ pipeline {
     agent { 
         label 'AGENT-1'
     }
+    evnironment{
+        project="Expense"
+        component="Backend"
+        env="Dev"
+    }
     stages {
         stage('Build') {
             steps {
                 script{
                     sh """
                         echo "Hello, This is Build"
+                        echo "print environment variables -- $project"
                     """
                 }
             }
