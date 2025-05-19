@@ -31,5 +31,16 @@ pipeline {
             }
         }
     }
+    post{
+        always{
+            echo 'I will always say Hello again!'
+        }
+        failure{
+            echo 'Build not completed or Failed'
+        }
+        success{
+            echo 'Build completed successfully'
+        }
+    }
 }
 
