@@ -94,6 +94,7 @@ pipeline {
     post{
         always{
             echo 'I will always say Hello again!'
+            deleteDir()
         }
         failure{
             echo 'Build not completed or Failed'
